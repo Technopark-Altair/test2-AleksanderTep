@@ -1,0 +1,12 @@
+<div>
+  <h1>калькулятор</h1>
+  <input [(ngModel)]="firstOperand" type="number">
+  <select [(ngModel)]="operator">
+     <option value="||">||</option>
+     <option value="&&">&&</option>
+  </select>
+  <input [(ngModel)]="SecondOperand" type="number">
+  <input (click)="doCalc()" type="submit" value="Подтвердить">
+  <p>Результат {{ result }}</p>
+  <p>Текст ошибки {{ errorMessage }}</p>
+</div>

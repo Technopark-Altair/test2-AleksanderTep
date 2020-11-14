@@ -1,0 +1,17 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    /*justify-items: center;*/
+}
+
+.prom{
+    grid-column: 2/4;
+    grid-row: 2;
+    background-color: brown;
+}
+.grid-container > p{
+    border: 1px solid blue;
+    justify-self: center;
+
+}
